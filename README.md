@@ -17,3 +17,7 @@ You can also set the API Token locally, using the `wrangler config` command, if 
 ```
 wasm-pack test --chrome --headless
 ```
+
+## Publishing
+
+Unforunately, the Cloudflare GitHub Action doesn't not yet support rust workers: https://github.com/cloudflare/wrangler-action/issues/16
