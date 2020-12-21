@@ -11,11 +11,11 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Install latest nightly
+      - name: Install Rust Toolchain
         uses: actions-rs/toolchain@v1
         with:
             toolchain: stable
-            override: true=
+            override: true
       - name: Run cargo check
         uses: actions-rs/cargo@v1
         with:
